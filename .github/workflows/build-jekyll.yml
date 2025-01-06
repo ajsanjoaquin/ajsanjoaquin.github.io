@@ -29,8 +29,8 @@ jobs:
           jekyll_src: './'           # Default is root directory
           jekyll_cfg: '_config.yml'  # Default is _config.yml
           jekyll_baseurl: ''         # Default is according to _config.yml
-          bundler_ver: '2.4.22'            # Default is compatible bundler version (~>2.5.0), >=0 is latest bundler version
-          ruby_ver: '2.7.8.225'               # Default is 3.2.0
+          bundler_ver: ''            # Default is compatible bundler version (~>2.5.0), >=0 is latest bundler version
+          ruby_ver: '3.1.4'               # Default is 3.2.0
           cname: ''                  # Default is to not use a cname
           actor: ''                  # Default is the GITHUB_ACTOR
           pre_build_commands: ''     # Installing additional dependencies (Arch Linux)
