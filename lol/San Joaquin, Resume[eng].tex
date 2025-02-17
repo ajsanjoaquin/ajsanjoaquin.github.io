@@ -1,0 +1,213 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+\hypersetup{%
+  colorlinks=true,% hyperlinks will be coloured
+  linkbordercolor=blue,% hyperlink border will be red
+}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+\renewcommand*{\cventry}[5]{%
+  \vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+    \ifempty{#2#3}
+      {\ifempty{#1#4}{}{\entrypositionstyle{#1} & \entrydatestyle{#4} \\}}
+      {\entrytitlestyle{#2} & \entrylocationstyle{#3} 
+       \ifempty{#1#4}{}{\\\entrypositionstyle{#1} & \entrydatestyle{#4}}}
+    \ifempty{#5}{}{\\\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}}
+  \end{tabular*}%
+  \par % <============================================================== missing in class
+}
+
+\usepackage{atbegshi,picture}
+\AtBeginShipout{\AtBeginShipoutUpperLeft{%
+  \put(\dimexpr\paperwidth-1cm\relax,-1.5cm){\makebox[0pt][r]{\framebox{Every colored text is a link.}}}%
+}}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{\textbf{Ayrton}} \ \headerlastnamestyle{San Joaquin} \\
+	\vspace{1mm}
+	\headerpositionstyle{\faFlask \href{https://scholar.google.com/citations?user=e4UX388AAAAJ&hl=en}{Scientist \& ML Engineer, Trustworthy AI}} \\
+	\vspace{1mm}
+	{\faEnvelope\ ayrton@aya.yale.edu} | \iffalse {\faMobile\ +65 88147588} | \fi {\faMapMarker\ Singapore} | \faGithub\ \href{https://github.com/ajsanjoaquin}{ajsanjoaquin} | {\faLinkedinSquare\ \href{https://www.linkedin.com/in/ajsanjoaquin/}{ajsanjoaquin}}| {\faLegal\ \href{http://ajsanjoaquin.github.io/values}{Values}}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{1mm}
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{BSc. (Honors) in Data Science, Minor in Philosophy. \textbf{(Scholar, With High Distinction)}}
+	{Yale-NUS College}
+	{Singapore}
+	{August 2018 - May 2023}
+	{Semester Abroad at the University of Copenhagen, Denmark}
+\end{cventries}
+\vspace{-3mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{AI Scientist, \href{https://descartes.cnrsatcreate.cnrs.fr/}{DesCartes program} (https://descartes.cnrsatcreate.cnrs.fr/)}
+	{French National Centre for Scientific Research (CNRS)@CREATE}
+	{Singapore}
+	{September 2023 - Present}
+	{\begin{cvitems}
+		\item {Leading a study on efficient fine-tuning of open-source Large Language Models (LLMs) for instruction-following.}
+		\item {Fine-tuned dozens of SOTA LLMs (Llama-\{3,2\}, Mistral, Mixtral, Phi-2, Gemma, TinyLlama) on Ultrachat dataset (200k) and Alpaca (52.2k)}
+		\item {Implemented automated training scripts in distributed settings ranging from 1-2 node clusters provided by the \href{https://www.nscc.sg/}{Singapore National Supercomputer}.}
+	\end{cvitems}}
+	\vspace{-2mm}
+	\cventry
+	{Scholar}
+	{Machine Learning Safety Scholars Program, Center for AI Safety}
+	{Palo Alto, United States}
+	{June 2022 - August 2022}
+	{\begin{cvitems}
+		\item {Performed prompt-injection attacks against LLMs (GPT-3, LaMDA, T5) via API access.}
+		\item{Implemented various strategies in \textbf{robustness} (PGD, adversarial training), \textbf{anomaly detection} (AUROC, ViM), \textbf{calibration} (RSME, Brier scores), and \textbf{trojan attacks} (data poisoning).}
+	\end{cvitems}}
+	\vspace{-2mm}
+	\cventry
+	{Research Engineer}
+	{Data Privacy and Trustworthy Machine Learning Lab, NUS}
+	{Singapore}
+	{May 2021 - March 2022}
+	{\begin{cvitems}
+		\item {Collaborated with \textbf{Google DeepMind} on privacy and adversarial machine learning research for my bachelor's thesis in a team across 4 time zones. \textbf{Published in a top security conference (ACM CCS) as the youngest and only undergraduate co-author.}}
+	\end{cvitems}}
+	\vspace{-2mm}
+	\cventry
+	{Deep Learning Engineer}
+	{Arterys (Freelance)}
+	{San Francisco, United States}
+	{March 2020 - June 2020}
+	{\begin{cvitems}
+		\item {Created a COVID-19 Pneumonia classifier \textbf{4 days after pandemic declaration in collaboration with A.I. Singapore} based on a ResNet-38.}
+		\item {Collaborated with Arterys to \href{https://www.linkedin.com/feed/update/urn:li:activity:6676702441607716864/}{deploy the model in their platform} 
+		for use by American hospitals and researchers. Model engineer in a team of 4 across 3 time zones.}
+	\end{cvitems}}
+\end{cventries}
+
+\vspace{-5mm}
+\cvsection{AI Engineering Projects}
+\begin{cventries}
+	\cventry
+	{}
+	{DesCartes Program Semantic Search Engine}
+	{LLMs}
+	{}
+	{• Deployed a system internally to perform document retrieval via vector-based semantic search. Accepts and returns multilingual queries in English and French. The system is composed of a Llama-3 (8B) model for chat and bge-small model for embeddings. Orchestrated via LlamaIndex.}
+		
+	\vspace{-1mm}
+	\cventry
+	{}
+	{\href{https://github.com/ajsanjoaquin/meta-aria}{Meta Project Aria Workshop 2023}}
+	{LLMs, Contextual AI}
+	{}
+	{• \textbf{Invited by Meta Reality Labs} to design a use-case for \href{https://about.meta.com/en/realitylabs/projectaria/}{Project Aria}. Created an LLM assistant that uses social media data and real-time visual context from smart glasses. \href{https://drive.google.com/file/d/1ymkkCU31EP57DDXJpdB9NIuVrsMtZB9t/view?usp=drive_link}{Video demo.}}
+
+	\vspace{-1mm}
+	\cventry
+	{}
+	{Document Summarization}
+	{LLMs}
+	{}
+	{• Fine-tuned GPT-J (6B) on 100k arxiv pre-prints to summarize research papers used by my lab.}
+	
+	\vspace{-1mm}
+	\cventry
+	{}
+	{\href{https://github.com/ajsanjoaquin/mPerturb}{Eplaining Neural Networks with Meaningful Perturbations}}
+	{Explainable AI}
+	{}
+	{• For explaining an image classifier's prediction, I implemented the algorithm described in \textit{Explanations of Black Boxes by Meaningful Perturbation (Fong, et. al., 2018)}.}
+	
+	\vspace{-1mm}
+	\cventry
+	{}
+	{\href{hhttps://github.com/ajsanjoaquin/Shapley_Valuation}{Equitable Valuation of Data Using Shapley Values}}
+	{Explainable AI}
+	{}
+	{• I did a Pytorch implementation of computing Shapley values via Truncated Monte Carlo sampling from \textit{What is your data worth? Equitable Valuation of Data (Ghorbani and Zou, 2019)}.}
+	
+	\vspace{-1mm}
+	\cventry
+	{}
+	{\href{https://github.com/ajsanjoaquin/COVID-19-Scanner}{COVID-19 Medical Triage Model}}
+	{Computer Vision}
+	{}
+	{• I developed a model meant to help triage patients (prioritize certain patients for testing, quarantine, and medical attention) that require diagnosis for COVID-19. Trained on 26k x-ray images.}
+	
+	\vspace{-1mm}
+	\cventry
+	{}
+	{\href{https://github.com/pulls?q=is\%3Apr+author\%3Aajsanjoaquin+archived\%3Afalse+is\%3Aclosed}{Open-Source AI}}
+	{DevOps}
+	{}
+	{• Added new features for major machine learning projects including \textbf{Pytorch, HuggingFace Transformers, and YOLOv4} (object detection model).}
+\end{cventries}
+
+\cvsection{Skills}
+\vspace{-3mm}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Machine Learning:  & {\skill{ Pytorch, Tensorflow, LlamaIndex, JAX, HuggingFace, Langchain, NLTK, Spacy}} \\
+		Data:  & {\skill{Pandas, PySpark, Querying (SQL, MongoDB), Vector Database (Qdrant, Pinecone)}} \\
+		MLOps: & {\skill{Linux, Databricks, GCP, AzureML, Snowflake, Docker, Flask, Continuous Integration, Kubernetes}} \\
+	\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\end{document}
