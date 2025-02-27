@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research Directions</title>
+  <meta name="description" content="A Jekyll theme for content-rich sites">
+  
+  <link rel="shortcut icon" type ="image/x-icon" href="/assets/img/favicon.ico">
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+ <!--   <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="/research/">
+
+  <link rel="alternate" type="application/rss+xml" title="Tufte-Jekyll" href="/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge" src="/assets/img/badge_1.png" alt="CH"></a>
+	
+		
+  	
+		
+		    
+		      <a href="/">ayrton's</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/about/">About</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/values/">My Core Values</a>
+		    
+	    
+  	
+		
+		    
+		      <a class="active" href="/research/" class="active">Research Directions</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/css/print.css"></a>
+		    
+	    
+  	
+		
+  	
+	</nav>
+</header>
+    <article class="group">
+      <h1>Research Directions</h1>
+<p class="subtitle">November 20, 2023</p>
+
+<p>My fundamental career goal is to make AI systems trustworthy. My fundamental research goal is to discover knowledge to do so. This research goal involves / will involve me in different fields of AI research, including Interpretability, Alignment, Governance, and Safety. Below are questions I have worked on or will work on connected to my mission.</p>
+
+<h3 id="when-should-we-lose-trust-in-ai-systems">When should we lose trust in AI Systems?</h3>
+<p>Knowing when to lose trust in a system is knowing when it will fail. To know when a system will fail, you must know (1) what they are vulnerable to and when (2) can those vulnerabilities be exploited. To understand both of these for AI systems, you can examine the components of the system or its interactions with each other. <strong>Trojan-attacks and adversarial examples</strong> focus on one such component, the training data, to induce specific malicious behaviors.  <strong>Interpretability</strong> examines the interaction between the data and the model to understand (1) what is the underlying mechanism happening and (2) how can that be communicated and understood by the end-user.</p>
+
+<p>The current state of not guaranteeing failure for commercial AI systems is laughable. Take for instance the current safety mechanisms for the most popular models, which purport to be aligned with human preferences and safety of users. <a href="https://llm-attacks.org/">Apparently all of them are vulnerable to cheap text-based attacks</a>.
+I am especially interested on replacements for the superficial (and possibly counterproductive) alignment techniques that we currently have, such as Reinforcement Learning from Human Feedback (RLHF), which can reward deceptive behavior and be exploited by adversaries as aforementioned.</p>
+
+<p>
+  <img width="70%" src="../assets/img/reddit_grandma.png" align="center" style="margin: 10px 30px 10px 10px;" />
+</p>
+
+<p><a href="https://www.reddit.com/r/ChatGPT/comments/12uke8z/the_grandma_jailbreak_is_absolutely_hilarious/">from Reddit</a></p>
+
+<h3 id="how-can-all-of-us-trust-ai-systems">How can all of us trust AI Systems?</h3>
+<p>AI Systems are designed to be generalizable (i.e. adapt their knowledge to the specific environment). However, this is not always the case, and the opposite may sometimes be true: that current AI Systems instead can change the environment to better suit itself, which includes the users (it is debatable whether this happens with social media recommender systems on users (e.g. a user may develop Body Dysmorphic Disorder from looking exclusively on recommended photos)).</p>
+
+<p>For <ins> all of us </ins> to trust these systems, we need the participation of everyone affected in designing and contributing data towards a system to be deployed in an environment. The environment has to be specified and not just an afterthought. I am interested in designing methods that make <strong>AI system design and governance</strong> inclusive amongst everyone affected, especially from the Majority World, countries who have been historically excluded from such activities even in other technology and social domains. One research direction I believe is important is on <strong>low-resource languages</strong>, which would enable greater adoption of AI systems within the Majority World as well as preserving minority languages.</p>
+
+<p>For all the potential of these Systems to persuade and manipulate, it must be used to depolarize and regain consensus on which sources of information we as a society value. Researchers seek to align AI systems, but <strong>align them to whose interests?</strong> I believe that it must be to the public interest over everything else. Current alignment techniques assumes that humans have a homogenous set of values. I am interested in efforts that replace such techniques that account for value uncertainties and different value systems, along with repurposing these current alignment techniques for consensus building, <a href="https://arxiv.org/abs/2211.15006">such as this work that uses AI systems that can find consensus given diverse preferences</a>.</p>
+
+<h3 id="how-can-ai-systems-trust-us">How can AI Systems trust us?</h3>
+<p>I believe trust is a two-way relationship. From a practical perspective, given that they will eventually become more powerful than us in many ways, it is important to maintain their trust that our human preferences should still be their preferences too. From a principled perspetive, it is important to avoid inflicting harm whenever we can. <strong>Do AI systems, especially those designed as agents, have moral worth?</strong> 
+In what level of complexity do they deserve such worth? When can systems develop prerequisites for moral worth, such as desires, complex reasoning, and experiencing pleasure &amp; suffering <strong>especially if such properties are completely alien to us and other biological organisms?</strong></p>
+
+<p><img src="/assets/img/shoggoth.jpg" alt="" /></p>
+
+<h3 id="what-is-this-trust-for">What is this trust for?</h3>
+<h3 id="towards-revealing-hidden-worlds">Towards Revealing Hidden Worlds</h3>
+
+<p style="text-align: center;">"Just as there are odors that dogs can smell and we cannot, as well as sounds that dogs can hear and we cannot, so too there are wavelengths of light we cannot see and flavors we cannot taste.
+
+Why then, given our brains wired the way they are, does the remark “Perhaps there are thoughts we cannot think,” surprise you?
+
+Evolution, so far, may possibly have blocked us from being able to think in some directions; there could be unthinkable thoughts."</p>
+<p style="text-align: center;">    - Richard Hamming in <em> The Unreasonable Effectiveness of Mathematics </em> </p>
+<p><br /></p>
+
+<p>What is the intelligence in the artificial? In the biological? In ourselves? Of AI agents, of creatures more complicated and primitive, of other people? What is it like to be what we can never be? And how can that lead us to understand intelligent creatures a bit better? AI is finally allowing us to push the frontiers of what we can know of external beings and systems, of transmission of culture and language, of songs older than any of our ancestors. What is it like to unlock a hidden world present in plain sight? What are the repercussions for the study of psychology, gender, linguistics, sociology, biology, and ecology?</p>
+
+<p style="text-align: center;">❝These sounds that we can’t hear, this light that we can’t see, how do we even know about these things in the first place? Well, we built tools. We built tools that adapt these things that are outside of our senses, to our human bodies, our human senses. We can’t hear ultrasonic sound, but you hook a microphone up to an oscilloscope and there it is. You’re seeing that sound with your plain old monkey eyes. We can’t see cells and we can’t see galaxies, but we build microscopes and telescopes and these tools adapt the world to our human bodies, to our human senses. When Hamming says there could be unthinkable thoughts, we have to take that as “Yes, but we build tools that adapt these unthinkable thoughts to the way that our minds work and allow us to think these thoughts that were previously unthinkable."❞ </p>
+<p style="text-align: center;">    - Bret Victor in <em> The Media for Thinking the Unthinkable </em> </p>
+<p><br /></p>
+
+<p>There will be things that we will never be able to understand, but we will try to approximate them with the tools we have built. I think this is the biggest benefit of AI. My hope is that AI can help us unlock what we cannot know and do ourselves. And with these constantly-refined principles, unlock wisdom with our newfound powers.</p>
+
+
+
+    </article>
+    <span class="print-footer">Research Directions - November 20, 2023 - ayrton san joaquin</span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    <!--<li><a href="mailto:@email.com"><span class="icon-mail3"></span></a></li>-->    
+    
+      <li>
+        <a href="//github.com/ajsanjoaquin"><span class="icon-github"></span></a>
+      </li>
+    
+      <li>
+        <a href="//www.linkedin.com/in/ajsanjoaquin"><span class="icon-linkedin"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+<span>&copy; 2025 &nbsp;&nbsp;AYRTON SAN JOAQUIN</span></br> <br>
+<span>This site is created with the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme for Content-centric blogging </a> in <a href="//jekyllrb.com">Jekyll</a>.</span> 
+</div>  
+</footer>
+  </body>
+</html>

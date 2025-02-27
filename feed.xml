@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tufte-Jekyll</title>
+    <description>A Jekyll theme for content-rich sites</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 28 Feb 2025 03:27:19 +0800</pubDate>
+    <lastBuildDate>Fri, 28 Feb 2025 03:27:19 +0800</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Meeting Maria Ressa (Again)</title>
+        <description>&lt;p&gt;I first met her before she was imprisoned.&lt;/p&gt;
+
+&lt;p&gt;I was 17. She was giving a talk in a local university about social media and disinformation. Before the 2016 US elections, she had sounded the alarm on disinformation spreading in the Philippines that influenced our elections and propelled Duterte that led yet another failed war on drugs and a successful war on the poor. 
+&lt;!--more--&gt; 
+&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;/assets/img/ressa/first.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;label for=&quot;0&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;0&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;2017 at Ateneo, Manila, Philippines. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;After her talk, I asked her: “how can we hold these social media companies, all located in the US, accountable for the violence they help incite and the politics they cripple in developing  countries?” It is literal violence through state-sponsored disinformation: War on Drugs in the Philippines, Rohingya genocide in Myanmar, ethnic cleansing in Ethiopia during the Tigray war, and vaccine hesitancy worldwide. And at that time in 2017, these companies “solve it” by having one or two people from San Francisco determine the online content of entire countries, or of unrelated neighboring countries grouped into regions.&lt;/p&gt;
+
+&lt;p&gt;7 years later, after she herself was targeted by the Philippine government with disinformation and imprisoned on false charges, I met her again in a gathering where we were the only 3 Filipinos invited to the event in the economic headquarters of the world. Now she has a Nobel Peace Prize. Now I authored 2 anonymous articles for Rappler, the news site she founded. Now I am a researcher figuring out how we can build AI that puts humans first while trying to support and communicate to policymakers the urgency to act now.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/ressa/second.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;label for=&quot;1&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;1&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;2025 at OECD Headquarters, Paris, France. I was selected out of more than 1000 applications to present a poster. There were 40 speakers and 49 other poster presenters. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Yet I still have the same unanswered question. The patterns I experienced on social media are manifesting again with how AI is developed and used but in more subtle, complex ways. Before, we only had to deal with the issue of teen girls developing negative body images of themselves from social media use. Now, we have to deal with that AND the issue of people becoming dependent on AI companions to the point of being persuaded to commit suicide while simultaneously accelerating carbon emissions in the process. All the while American Big Tech companies become even richer and accumulate more power. Not to mention, Meta specifically pulling the plug on content moderation too a few weeks ago.&lt;/p&gt;
+
+&lt;p&gt;7 years on, she doesn’t have a clear solution either. Yet Maria Ressa is still committed to the fight against disinformation and pushing for accountability for the powerful. It amazes me how she keeps going. She is one of the strongest women I have ever met.&lt;/p&gt;
+
+&lt;p&gt;7 years before, her talk had made me think of the effects of technology on society close to my heart. It is transformative. It is liberating. But it can also be violent. And that violence is painfully real.&lt;/p&gt;
+
+&lt;p&gt;I will do my best to help avoid the worst perversions from social media being perverted further with AI. I will try. We can only try.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 17 Feb 2025 03:18:00 +0800</pubDate>
+        <link>/articles/25/Meeting-Maria-Ressa-Again</link>
+        <guid isPermaLink="true">/articles/25/Meeting-Maria-Ressa-Again</guid>
+        
+        
+        <category>post</category>
+        
+      </item>
+    
+      <item>
+        <title>Aligning Models w/o Alignment: How Reliable ML can help in AGI Safety</title>
+        <description>&lt;p&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;/assets/img/ai-safe/image1.png&quot; alt=&quot;AI take-off will happen&quot; /&gt;&lt;/a&gt;
+&lt;label for=&quot;0&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;0&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;It is very easy to make wrong conclusions if one does not look at the bigger picture. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Progress in AI will explode in the coming decades as more effort and resources are poured for its advance in the same capitalist system that allowed GDP per capita to rise at a rate never before seen in human history within the past century. With an increase in AI capabilities comes an increase with its dangers. Artificial General Intelligence (AGI) Safety considers the impacts of AI in the long-term (decades to centuries) of AI models capable of generalizing to domains not specified in training. However, AGI Safety (safety) is still a niche topic within current machine learning research. If it does get treated seriously as a research area, it is often limited to extremely well-funded organizations based in Western countries (e.g. OpenAI, DeepMind in the US, UK, respectively). &lt;strong&gt;How can I, an undergrad based in Asia without any connections to any of these organizations, possibly do technical work in AI Safety?&lt;/strong&gt;
+&lt;!--more--&gt; 
+In this post, I will provide my current strategy of doing safety work given these constraints. Note that this is a strategy informed by my current knowledge of AI. Discoveries in ML, especially if it leads to certain research areas stagnating, can render parts of this post obsolete, and so my priorities in safety may change over time. Take this with a grain of salt.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/ai-safe/image2.png&quot; alt=&quot;&quot; /&gt;
+&lt;label for=&quot;1&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;1&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;We are trying to minimize our unknown unknowns for AI Safety, but the current paradigm in ML isn′t decreasing it fast enough. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Chris Olah from OpenAI argues that a paradigm shift focusing on model interpretability in current machine learning research can lead to accelerated progress in AGI Safety. Many areas of research are focused on improving performance metrics (e.g. accuracy, ROC) and deploying narrow-AI, which are limited to human-specified tasks, on different domains (e.g. healthcare, construction, automating corporate work). However, we are often unaware of the flaws and failure modes of these models, often finding it at deployment, which can cause grave social, economic, and political costs, even death (e.g. Herzberg’s death was caused by a semi-autonomous Uber vehicle in 2018 https://www.bbc.com/news/technology-54175359).&lt;/p&gt;
+
+&lt;p&gt;For the most advanced ML models, of which AGI may likely arise from, unknown failure modes are not the only problem. We scale them up to billions of parameters without really understanding how that leads to more intelligent capabilities, and it leaves us wondering if we can build advanced models more efficiently. In the process, we are likely to be wasting huge amounts of compute and releasing greenhouse gases in an already decaying world.&lt;/p&gt;
+
+&lt;p&gt;Instead of hacking and error, having interpretable models can allow us to understand the capabilities and failure of models comprehensively. Once we discover fundamental properties of 
+ML models, including its limitations and the inherent trade-offs of various constraints placed on it, we can develop a principled method of constructing models, designing learning algorithms, and maintaining deployed models. Instead of isolated ML teams publishing state of the art models with arcane architectures and training setups, interpretability can foster the much-needed interdisciplinary collaboration from scientists of different domains who can translate their expertise directly into the model. Furthermore, it can make ML models inclusive to the communities it serves. Target groups who will feel the model’s effects the most can provide feedback that, with the help of interpretability tools, make the model understand and improve itself on this feedback. Potential harms can also be mitigated when these groups understand the capabilities of the model and how it can affect them.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/ai-safe/image3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ML Interpretability provides a strong case on why it can lead to safety, and I am currently favoring this as an important path for AI development in general. Interpretability falls under the research area of Reliable ML, which also includes robustness and fairness. While one can directly work in interpretability, I believe work in the adjacent areas of robustness and fairness contributes to discoveries in interpretability, and vice versa. As an added bonus, work on reliable ML addresses tool-AI safety, which are the limited AI models we currently deploy.&lt;/p&gt;
+
+&lt;p&gt;Why would one prefer to work in an adjacent area instead of interpretability directly? I generally find research within an adversarial setting more motivating, which is often found in robustness and fairness research. In my opinion, these settings, by having a specific objective, provide a more imminent, concrete, and therefore motivating threat. You are actively challenged by an intelligent entity (an attacker if you are defending) or a complex phenomena (a ML model or the training setup if you are attacking), and so you are forced to take the perspective of your adversary and think of all the potential ways it can outsmart or break your method. Comparing this to a client who wants a specific and better explanation as a motivation for some papers that come up with new interpretability methods, I am less creative in this situation and therefore less motivated.&lt;/p&gt;
+
+&lt;p&gt;Besides the motivation, good robustness and fairness research leads to a deeper understanding of a model. I imagine the adversarial setting to be a competitive game. To win at this game, you must create a strong method, which needs to be future-proof (future methods won’t break it) and theoretically practical (in terms of scalability and known limitations). You don’t want your method or the driving idea behind it entombed merely in a paper (unless you are lazily optimizing for publications). &lt;strong&gt;To develop a strong attack or defence, you need a good understanding of your model.&lt;/strong&gt; In the process of developing a strong method, you therefore discover fundamental properties of a model that can generalize to different architectures and hopefully training regimes. Understanding the model complements the development of the method too. It allows you to analyze the strengths and limitations of your method.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/ai-safe/image4.png&quot; alt=&quot;&quot; /&gt;
+&lt;label for=&quot;2&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;2&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Even if reliable ML currently only has narrowly-defined goals, these goals will generalize as the field progresses, and we can couple this with positive feedback from improving ML interpretability methods. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;One limitation is that the alignment of the model is on very specific goals (threat model) that can be formally defined. For example, numerous gradient-based robustness attacks and defences rely on a stringent p-norm distance specification which in practice is an unrealistic assumption. But I think as with safety, Reliable ML is still a budding field and we can expect to see more sophisticated and realistic threat models soon. The advantage of Reliable ML in this case over safety is that it is directly applicable to AI now and therefore an ecosystem exists for funding and support.&lt;/p&gt;
+
+&lt;p&gt;Can we expect a threat model that tackles hard-to-formalize objectives, like a model being reliable in various environments? I think we can as models become more interpretable and therefore allow us to build more advanced AI. Using the gradient-based robustness example, researchers are moving to different distance specifications such as Wasserstein distance that allows a “global” modification of an image compared to the pixel-based modification by the former, which can make for a more sophisticated fooling of both the AI and humans, and therefore a better adversarial setting.&lt;/p&gt;
+
+&lt;p&gt;Another limitation would be that robustness and fairness research can create methods that are impractical for reliability. Some can be too limiting and introduce fundamental tradeoffs with performance, but I believe this is a step towards finding better corrections, or rethinking how we design models so they can be more reliable. Both ways focus on understanding the model. A good example would be provably robust classifiers as a defence against adversarial examples. While they provide robustness guarantees within a specified area in the input space, this area is always limited and degrades performance significantly that renders them impractical for many applications. There is a tradeoff between area guaranteed to be robust and model accuracy.&lt;/p&gt;
+
+&lt;p&gt;It turns out that this method moves the decision boundary of a classifier to make a larger area robust, and it can be exploited to create new attack methods! While this can create an arms-race scenario, we have a new understanding of the limitations of the classifier and shift how we view these attacks and defences, such as by rethinking how we fundamentally train our classifiers to escape this race. Regardless, fixing and breaking in a controlled environment makes us discover limitations and dangers we can avoid.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/ai-safe/image5.png&quot; alt=&quot;&quot; /&gt;
+&lt;label for=&quot;3&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;3&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Sure, our paradigm may be wrong, but at least it’s within a lab. Fixing and breaking in a controlled environment makes us discover limitations and dangers we can avoid. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;label for=&quot;4&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;4&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Disclaimer: I know that arms-races are likely to happen. However, I view them as a mechanism to signal where society should focus itself on / avoid. For example with deep fakes, the threat of an arms race requires us to rethink data ownership, in which a technical solution (e.x. blockchain) is necessary but insufficient. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;label for=&quot;5&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;5&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;So can we change our efforts fast enough? I hope so. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;From a capabilities perspective, an increase in our understanding of interpretable ML can shift focus again to increasing performance more rather than safety itself. For example, if there is a fundamental tradeoff between performance and desired behavior X, maybe people will prefer performance and thus keep the tradeoff there. This seems likely at first given that a market economy emphasizes competitiveness and thus organizations may prioritize performance over safety to some extent if it means keeping them competitive. However, this prioritization should decrease once the large costs of deploying dangerous advanced AI becomes clearer.&lt;/p&gt;
+
+&lt;p&gt;Has prioritization of avoiding large costs worked before as costs became clearer? It clearly has not with anthropogenic climate change, wherein we still consume fossil fuels at unsustainable levels amidst the glaring evidence of the irreversible harm we are subjecting ourselves to. However, unlike climate change, where evidence linking it to human activity was a gradual process mired with deception by corporations, finding costs of having unsafe advanced AI is relatively straightforward. The discovery of these costs should arise naturally, or at least be aided by, from using the powerful interpretable tools that allowed us to build these advanced AI in the first place. But further still, I do not think a technical solution is sufficient. Maintaining safety as the priority requires intervention from institutions to collectively prevent a dangerous extinction event, maybe akin to nuclear weapons regulation.&lt;/p&gt;
+
+&lt;p&gt;To conclude, in terms of the existing ecosystem to support it and the motivation one can gain within an adversarial setting, robustness and fairness research are areas that overall improve how we understand current ML models and their interpretability. Coupled with Olah’s thesis that interpretability can help with long-term AI Safety via alignment, these areas are relevant throughout AI research and provide a realistic path in my position to pursue compared to directly focusing on the budding and western-centric safety field.&lt;/p&gt;
+
+&lt;p&gt;References (For images not explicitly referencing themselves):&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;(Unknown Unknowns chart) https://peerinsight.com/blog/key-to-growth-unknown-unknowns/&lt;/li&gt;
+  &lt;li&gt;(Wasserstein adversarial examples) https://arxiv.org/abs/1902.07906&lt;/li&gt;
+  &lt;li&gt;(Trustworhy ML image) https://www.youtube.com/watch?v=UpGgIqLhaqo&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Sun, 26 Sep 2021 02:30:09 +0800</pubDate>
+        <link>/articles/21/AI-Safety-Career</link>
+        <guid isPermaLink="true">/articles/21/AI-Safety-Career</guid>
+        
+        
+        <category>post</category>
+        
+      </item>
+    
+      <item>
+        <title>How I got a Free Dinner with Doctors from all-across Asia</title>
+        <description>&lt;p&gt;I got off from the bus and proceeded to walk for half a kilometer.
+‘405 Havelock, Furama Hotel. Turn on the second right’ I kept muttering to myself so I didn’t have to check my Google Maps again. As I was nearing my destination, I glanced on top of the buildings. I saw the bright golden words ‘FURAMA RIVERFRONT’ which impulsively made me brisk walk. I was, after all, late.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;&amp;quot;It’s quite a good experience having a free dinner at a four- star hotel&amp;quot;&quot;&gt;&lt;img src=&quot;https://miro.medium.com/max/2400/1*pZl0t1PATe-SdOv3NHiAkA.jpeg&quot; alt=&quot;furama&quot; /&gt;&lt;/a&gt;
+&lt;label for=&quot;0&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;0&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;It’s quite a good experience having a free dinner at a four- star hotel &lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I walked across the driveway because there was no dedicated pedestrian lane to the hotel. People were getting off their cars with their blazers and Indochinos. I was getting off the road with my Uniqlo outfit and blue Nike trainers. Luckily, those people went to a different event.&lt;/p&gt;
+
+&lt;p&gt;I entered the Mercury Room, and I immediately saw the only two people I chatted with the day before, a Filipino doctor and an Indonesian photographer. Yesterday, they were strangers. Now they are the only people I know in the room.&lt;/p&gt;
+
+&lt;p&gt;They led me to a table, and I proceeded to talk with the Doctors who were all from Indonesia. Barely 5 minutes getting into the table and before I could finish answering their questions about my summer, I was shifted again since the event hosts decided they wanted to randomize the tables (ostensibly to prevent people from grouping up; that made it fair game to me). This allowed me to meet doctors ranging from an oncologist to an otorhinolaryngologist (Ear, Nose, Throat doctor; yes I also had to google that up).&lt;/p&gt;
+
+&lt;p&gt;I was seated with a Japanese M.D. &amp;amp; PhD. from Fukuoka, two medical students from my university, and my photographer friend. As we introduced ourselves, the Dr., M.D. asked:&lt;/p&gt;
+
+&lt;p&gt;‘Hello, where are you from? Do you have a specialty?’&lt;/p&gt;
+
+&lt;p&gt;‘I’m from the Philippines. No I don’t.’&lt;/p&gt;
+
+&lt;p&gt;‘Ah, general practitioner?’&lt;/p&gt;
+
+&lt;p&gt;‘No, I’m an undergraduate student from NUS.’&lt;/p&gt;
+
+&lt;p&gt;The two medical students then looked at me, as if trying to recall my face. I added:&lt;/p&gt;
+
+&lt;p&gt;‘No, I’m not a medical student, I’m a liberal arts student.’&lt;/p&gt;
+
+&lt;h3 id=&quot;it-all-started-with-a-dance&quot;&gt;It all started with a dance&lt;/h3&gt;
+&lt;p&gt;A day before, I accepted an invite from my Doctor friend, Eugene, to join a doctor’s gathering. He previously invited me to food gatherings so I assumed I was getting free snacks. The doctors arrived late, and in the confusion of the introductions that followed, the organizer thought I was a volunteer. The event was a reunion of the Asian Medical Student’s Alumni Club (AMSAC) in Singapore. The food gathering I thought of turned out to be a dance session, and I initially thought this was a relaxation session from their events as an alternative to a Zumba class. They invited me to dance with them.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*MsnqOh8uZsuk3fN5j8hpng.jpeg&quot; alt=&quot;amsaac&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Volunteer to eat food? Yes. But volunteer for the dance? Not as eager.&lt;/p&gt;
+
+&lt;p&gt;While there was no food, I decided to stick around because a group of doctors dancing to “This is Me” from The Greatest Showman is such an unusual sight. I wouldn’t be able to see doctors as serious, precise professionals in the same way again as some of us made clumsy choreographic mistakes.&lt;/p&gt;
+
+&lt;p&gt;At the middle of the dance, due to my engaging performance (or realistically, not enough doctors were dancing), I was invited to dance with them for the real performance. The organizer then explained this was merely a practice session because they were going to perform at Resorts World Sentosa in front of hundreds of medical students from AMSA International (the non-alumni medical association).&lt;/p&gt;
+
+&lt;p&gt;To see doctors dance is an unusual sight, but to see them parade themselves in front of medical students was entirely something else. Again, my search for quality food would surely be found at one of Singapore’s well-known resorts. I agreed to join.&lt;/p&gt;
+
+&lt;p&gt;At the end of the practice, I was requested to collect the payments from the doctors for the session (of course I didn’t pay with anything except for my labor). Sure, I talked to them and all, but realistically I just met them a few hours ago, and with my friend Eugene having to leave in the middle of practice for an errand, I was still a stranger. Ah, yes. Trust a stranger with almost a thousand dollars.&lt;/p&gt;
+
+&lt;p&gt;As I sat there awaiting people to pull out their wads of cash from their luggage, I met the Indonesian photographer who would help me survive the initial contact in the dinner. When I mentioned I was a student with a scholarship in a foreign country, he shared his dream of sending his child to the same position I now occupy. I didn’t expect that response, as I usually got a “good luck with your studies” response whenever I tell them the same thing. It’s good to be reminded of privilege, especially when it takes you in an unusual adventure.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, the doctors that came late to the practice were to be my downfall as they were the necessary manpower that rendered myself unnecessary for the dance. In the end, I wasn’t able to join. As I was about to leave, grateful yet still wanting some free food, the organizer invited me to the dinner the next night as an appreciation for the volunteers (though I think I was the only volunteer).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*JmjCwGBvMEbW2pgdOcdWMA.jpeg&quot; alt=&quot;dancing_peeps&quot; /&gt;
+&lt;label for=&quot;1&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;1&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Author’s impression of the doctors dancing at Sentosa that night (Image taken from Musical TARU) &lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;sure-i-guess&quot;&gt;“Sure, I guess”&lt;/h3&gt;
+&lt;p&gt;It turns out this dinner was the main reunion event, where all the doctors in the alumni club attended. I got further “good luck with your studies” as well as genuinely interested people when I mentioned I was doing a summer job on plant metabolic modelling. I was also introduced to a former cruise doctor who now works in Malaysia (who offered to tour me around Kuala Lumpur during Hari Raya).&lt;/p&gt;
+
+&lt;p&gt;All in all, it was pretty confusing at first, but it was great once you were finally eating and getting to know where these doctors worked ranging from clinics to startups.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*RMCP3GxPBGzkmWoMYDCO4g.jpeg&quot; alt=&quot;presenting&quot; /&gt;
+&lt;label for=&quot;2&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;2&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Some doctors had interesting backgrounds like working for Alodokter, a successful Indonesian healthcare info startup! &lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The biggest factor to not saying no given their unusual requests at first (can you join us in our dance at Sentosa and collect our money?) was my free time. I was genuinely curious what these doctors would (and did) do. It taught me being fun was not something to be traded once you were a professional, more so when you are at the front line of telling people and their families of terminal illnesses and death. Most of them were beyond their thirties, and it’s reassuring that their friendships have endured even as they have graduated from medical school.&lt;/p&gt;
+
+&lt;p&gt;They have made their diverse backgrounds a tool, as I overheard one of them asking if they can be connected to someone in Malaysia to transfer some medical technologies to its Southeast Asian neighbors as technologies aren’t standardized among them. This was an opportunity for them to share best practices and updates about their respective medical communities.&lt;/p&gt;
+
+&lt;p&gt;I had seen a different snapshot of them. And it’s probably not something seen by most, if not all, of their patients.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;https://miro.medium.com/max/2400/1*E2uiy6ABTj2HcIpesyw0nA.jpeg&quot; alt=&quot;doctors_good_dancers)&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 14 Apr 2020 01:04:01 +0800</pubDate>
+        <link>/articles/20/Doctors-Across-Asia</link>
+        <guid isPermaLink="true">/articles/20/Doctors-Across-Asia</guid>
+        
+        
+        <category>post</category>
+        
+      </item>
+    
+  </channel>
+</rss>

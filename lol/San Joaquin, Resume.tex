@@ -1,0 +1,242 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+\hypersetup{%
+  colorlinks=true,% hyperlinks will be coloured
+  linkbordercolor=blue,% hyperlink border will be red
+}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+\renewcommand*{\cventry}[5]{%
+  \vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+    \ifempty{#2#3}
+      {\ifempty{#1#4}{}{\entrypositionstyle{#1} & \entrydatestyle{#4} \\}}
+      {\entrytitlestyle{#2} & \entrylocationstyle{#3} 
+       \ifempty{#1#4}{}{\\\entrypositionstyle{#1} & \entrydatestyle{#4}}}
+    \ifempty{#5}{}{\\\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}}
+  \end{tabular*}%
+  \par % <============================================================== missing in class
+}
+
+\usepackage{atbegshi,picture}
+\AtBeginShipout{\AtBeginShipoutUpperLeft{%
+  \put(\dimexpr\paperwidth-1cm\relax,-1.5cm){\makebox[0pt][r]{\framebox{Every colored text is a link.}}}%
+}}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{\textbf{Ayrton}} \ \headerlastnamestyle{San Joaquin} \\
+	\vspace{1mm}
+	\headerpositionstyle{\faFlask \href{https://scholar.google.com/citations?user=e4UX388AAAAJ&hl=en}{Scientist, Trustworthy AI} | \faPencil \href{https://medium.com/@ajsanjoaquin}{Writer}} \\
+	\vspace{1mm}
+	{\faEnvelope\ ayrton@aya.yale.edu} | \iffalse {\faMobile\ +65 88147588} | \fi {\faMapMarker\ Barcelona, Spain} | \faGithub\ \href{https://github.com/ajsanjoaquin}{ajsanjoaquin} | {\faLinkedinSquare\ \href{https://www.linkedin.com/in/ajsanjoaquin/}{ajsanjoaquin}}| {\faLegal\ \href{http://ajsanjoaquin.github.io/values}{Values}}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{1mm}
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{BSc. (Honors) in Data Science, Minor in Philosophy. \textbf{(Scholar, With High Distinction)}}
+	{Yale-NUS College}
+	{Singapore}
+	{August 2018 - May 2023}
+	{Semester Abroad at the University of Copenhagen, Denmark}
+\end{cventries}
+\vspace{-3mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{Research Analyst}
+	{AI Standards Lab}
+	{Singapore \& Spain}
+	{August 2024 - Present}
+	{\begin{cvitems}
+		\item Contributing to the Codes of Practice of the EU AI Act.
+	\end{cvitems} }
+	\vspace{-2mm}
+
+	\cventry
+	{AI Scientist, \href{https://descartes.cnrsatcreate.cnrs.fr/}{DesCartes program}}
+	{French National Centre for Scientific Research (CNRS)@CREATE \newline International Research Laboratory on Artificial Intelligence (\href{https://ipal.cnrs.fr/}{IPAL}- by appointment) }
+	{Singapore}
+	{September 2023 - August 2024}
+	{\begin{cvitems}
+		\item {Led a Franco-Singaporean team studying efficient fine-tuning of Large Language Models (LLMs). Published at EMNLP Findings 2024.}
+		\item {Created and curated the Tagalog dataset of \href{SeaEval}{https://seaeval.github.io/}, a multilingual benchmark for Southeast Asian Languages.}
+	\end{cvitems}}
+	\vspace{-2mm}
+	\cventry
+	{Scholar}
+	{Machine Learning Safety Scholars Program, Center for AI Safety}
+	{Palo Alto, United States}
+	{June 2022 - August 2022}
+	{\begin{cvitems}
+		\item {Studied model failures (CV and NLP), and led research on analyzing LLMs using few-shot learning.}
+		\item{Implemented various strategies in \textbf{robustness} (PGD, adversarial training), \textbf{anomaly detection} (AUROC, ViM), \textbf{calibration} (RSME, Brier scores), and \textbf{trojan attacks} (data poisoning).}
+	\end{cvitems}}
+	\vspace{-2mm}
+	\cventry
+	{Undergraduate Researcher}
+	{Data Privacy and Trustworthy Machine Learning Lab, NUS}
+	{Singapore}
+	{May 2021 - March 2022}
+	{\begin{cvitems}
+		\item {Collaborated with Google DeepMind on privacy and adversarial machine learning research for my bachelor's thesis in a team across 4 time zones. \textbf{Published in a top security conference (ACM CCS) as the youngest and only undergraduate co-author.}}
+	\end{cvitems}}
+	\vspace{-2mm}
+	\cventry
+	{Deep Learning Engineer}
+	{Arterys (Freelance)}
+	{San Francisco, United States}
+	{March 2020 - June 2020}
+	{\begin{cvitems}
+		\item {Created a COVID-19 Pneumonia classifier \textbf{4 days after pandemic declaration in collaboration with A.I. Singapore}.}
+		\item {Collaborated with Arterys to \href{https://www.linkedin.com/feed/update/urn:li:activity:6676702441607716864/}{deploy the model in their platform} 
+		for use by American hospitals and researchers. Model engineer in a team of 4 across 3 time zones.}
+	\end{cvitems}}
+\end{cventries}
+
+\vspace{-5mm}
+\cvsection{Honors \& Public Service}
+\begin{cventries}
+	\cventry
+	{}
+	{\href{https://www.aisafetyconnect.com/}{AI Safety Connect 2025}}
+	{Paris, France}
+	{}
+	{• Invited to present about risk management, an official side-event of the Paris AI Action Summit.}
+	\vspace{-1mm}
+
+	\cventry
+	{}
+	{\href{https://www.iaseai.org/conference}{International Association for Safe and Ethical AI Conference 2025}}
+	{Paris, France}
+	{}
+	{• Invited to present about risk management at IASEAI Conference, an official side-event of the Paris AI Action Summit}
+	\vspace{-1mm}
+
+	\cventry
+	{}
+	{\href{https://asiatechxsg.com/aisummitsingapore/speakers/ayrton-san-joaquin/}{The AI Summit Singapore 2024}}
+	{Singapore}
+	{}
+	{• Invited as a featured speaker to dicuss about data privacy for Generative AI at Asia Tech x Singapore, co-hosted by the Singapore Government.}
+	\vspace{-1mm}
+
+	\cventry
+	{}
+	{\href{https://publicai.network/}{Public AI Advocacy}}
+	{Global}
+	{}
+	{• Co-authored a foundational document of a global network of AI researchers, policymakers, and practitioners to center AI research and development in the public interest and as public infrastructure.}
+	\vspace{-1mm}
+
+	\cventry
+	{}
+	{\href{https://github.com/ajsanjoaquin/meta-aria}{Project Aria Timeline Builder Workshop 2023}}
+	{Menlo Park, United States}
+	{}
+	{• Invited by Meta Reality Labs to design a use-case for \href{https://about.meta.com/en/realitylabs/projectaria/}{Project Aria}. Participated as the only bachelor's graduate among 20 graduate and postdoctoral researchers. \href{https://drive.google.com/file/d/1ymkkCU31EP57DDXJpdB9NIuVrsMtZB9t/view?usp=drive_link}{Video demo.}}
+	\vspace{-1mm}
+	
+\end{cventries}
+
+\vspace{-3mm}
+\cvsection{Publications}
+\vspace{-3mm}
+\begin{cvhonors}
+	\cvhonor
+	{\textnormal{Gipiškis, R. and} San Joaquin, A., \textnormal{et. al.} }
+	{Risk Sources and Risk Management Measures in Support of Standards for General-Purpose AI Systems. \textit{Under Review}}
+	{\href{https://arxiv.org/pdf/2410.23472}{link}}
+	{January 2025}
+	\cvhonor
+	{San Joaquin, A., \textnormal{et. al.} }
+	{In2Core: Leveraging Influence Functions for Coreset Selection in Instruction Finetuning of Large Language Models. \textit{EMNLP Findings 2024} }
+	{\href{https://arxiv.org/abs/2212.01933}{link}}
+	{November 2024}
+	\cvhonor
+	{\textnormal{Tramer, F., \dots ,} San Joaquin, A., \textnormal{ et.al.} }
+	{Truth Serum: Poisoning Machine Learning Models to Reveal Their Secrets. \textit{ACM Conference on Computer and Communications Security (CCS) 2022}}
+	{\href{https://dl.acm.org/doi/10.1145/3548606.3560554}{link}}
+	{November 2022}
+\end{cvhonors}
+
+\vspace{-6mm}
+%\cvsection{Press}
+%\vspace{-3mm}
+%\begin{cvhonors}
+%	\cvhonor
+%	{\href{https://www.theregister.com/2022/04/12/machine_learning_poisoning}{Machine learning models leak personal info if training data is compromised}}
+%	{\textit{The Register}}
+%	{}
+%	{April 2022}
+%\end{cvhonors}
+
+%\vspace{-3mm}
+
+% \cvsection{Skills}
+% \vspace{-3mm}
+% \begin{cventries}
+% 	\cventry
+% 	{}
+% 	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+% 		Machine Learning:  & {\skill{ Pytorch, Sickit-Learn, JAX, HuggingFace, Langchain, NLTK, Spacy}} \\
+% 		Data:  & {\skill{Pandas, PySpark, Querying (SQL, MySQL, MongoDB), Vector Database (Qdrant, Pinecone)}} \\
+% 		MLOps: & {\skill{Linux, Git, GCP, AzureML, Snowflake, Docker, Flask, Continuous Integration, Kubernetes}} \\
+% 	\end{tabular}}}
+% 	{}
+% 	{}
+% 	{}
+% \end{cventries}
+\vspace{-20mm}
+\end{document}
